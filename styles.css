@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: black;
+}
+
+.animacion{
+    animation: anim 3s infinite; /* Ejemplo de animación */
+  }
+  
+.animacion-desactivada {
+    animation: none !important;
+    color: white;
+}
+
+@keyframes anim {
+    0%{
+        color: red;
+    }
+    50%{
+        color: green;
+    }
+    100%{
+        color: blue;
+    }
+}
+
+.bateria{
+    color: white;
+}
